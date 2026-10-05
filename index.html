@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Timothy's Personal Profile</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   
@@ -29,9 +30,12 @@
     <section id="about">
 
       <h2>About Me</h2>
-      <img src="./my-first-project/PICTURE.jpeg" alt="Photo of Timothy" width="250">
 
-       <p>
+      <div class="profile-container">
+    <img src="./my-first-project/PICTURE.jpeg" alt="Photo of Timothy" width="200">
+ 
+    <div class="about-text">
+ <p>
                 Hello, my name is Timothy Ezuruike.
                 I am currently learning web development.
             </p>
@@ -48,6 +52,9 @@
             </p>
 
             <br>
+    </div>
+
+      </div>
 
     </section>
 
@@ -55,7 +62,13 @@
 
     <section id="contact">
       <h2>Contact me</h2>
+
+
       <form>
+
+       <div class="form-grid">
+
+       <div>
         <label for="name">Full Name</label>
         <br>
         <input 
@@ -64,7 +77,12 @@
         name="name"
         placeholder="Enter your full name"
         >
-        <br><br>
+       </div>
+        
+         <br><br>
+
+       <div>
+
         <label for="email">Email Address</label>
         <br>
         <input type="email"
@@ -72,7 +90,12 @@
         name="email"
         placeholder="Enter your email"
         >
+       </div>
+       
         <br><br>
+
+        <div>
+
         <label for="age">Age</label>
         <br>
         <input 
@@ -80,9 +103,12 @@
         id="age"
         name="age"
         placeholder="Enter your age"
-        
-        >
-        <br><br>
+          >
+
+        </div>
+
+
+         <div>
         <p>Gender</p>
         <input 
         type="radio"
@@ -92,8 +118,7 @@
           >
          <label for="female">Female</label>
 
-
-                <input
+               <input
                     type="radio"
                     id="male"
                     name="gender"
@@ -104,8 +129,14 @@
 
                    <br><br>
 
+         </div>
 
-                <p>What are you interested in?</p>
+       </div>
+
+       
+        <div class="interests">
+
+           <p>What are you interested in?</p>
 
                 <input
                     type="checkbox"
@@ -135,12 +166,15 @@
                 >
 
                 <label for="javascript">JavaScript</label>
+        </div>
 
 
                 <br><br>
 
 
-                <label for="message">Message:</label>
+               <div class="message-box">
+
+                 <label for="message">Message:</label>
 
                 <br>
 
@@ -151,15 +185,15 @@
                     cols="30"
                     placeholder="Write your message here"
                 ></textarea>
+               </div>
 
 
                 <br><br>
 
 
-                <input
-                    type="submit"
-                    value="Send Message"
-                >
+              <button type="submit">
+               Send Message
+              </button>
       </form>
 
     </section>
