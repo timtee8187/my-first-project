@@ -1,0 +1,497 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+color: #1f2937;
+background-color: #ffffff;
+ line-height: 1.6;
+}
+
+.container {
+ width: 90%;
+ max-width: 1100px;
+margin: auto;
+
+}
+  /* NAVIGATION FLEXBOX */
+  .navbar {
+    background-color: #ffffff;
+    padding: 20px 0;
+}
+
+.nav-container {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+}
+nav {
+    display: flex;
+
+    gap: 30px;
+}
+
+nav a {
+    color: #4b5563;
+
+    text-decoration: none;
+
+    font-size: 14px; */
+}
+
+
+nav a:hover {
+    color: #21865f;
+}
+
+/* ------------------------------
+   HERO SECTION
+------------------------------ */
+
+.hero {
+    background-color: #eef6f1;
+
+    padding: 70px 0;
+}
+/* FLEXBOX */
+.hero-container {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 60px;
+}
+.hero-text {
+    flex: 1;
+}
+.small-heading {
+   color: #21865f;
+    font-size: 13px;
+
+    font-weight: bold;
+
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: 48px;
+
+    line-height: 1.1;
+
+    margin-bottom: 20px;
+
+    color: #1d2939;
+}
+
+.hero-description {
+    color: #667085;
+
+    max-width: 550px;
+
+    margin-bottom: 25px;
+}
+
+.button {
+    display: inline-block;
+
+    background-color: #258b63;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px 22px;
+
+    border-radius: 5px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+.button:hover {
+    background-color: #176c4b;
+}
+
+/* CODE CARD*/
+
+.code-card {
+    flex: 1;
+
+    max-width: 420px;
+
+    background-color: white;
+
+    border: 1px solid #dde3df;
+
+    border-radius: 6px;
+
+    overflow: hidden;
+}
+
+.code-card-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 15px 20px;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    font-size: 12px;
+
+    color: #68746d;
+}
+.code-card-header span:last-child {
+    color: #21865f;
+}
+
+.code-content {
+    padding: 30px;
+
+    color: #267a59;
+
+    font-family: "Courier New", bold, monospace;
+
+    font-size: 14px;
+}
+
+.indent {
+    margin-left: 20px;
+}
+
+.indent-two {
+    margin-left: 40px;
+}
+
+/* ABOUT */
+
+.about {
+    padding: 70px 0;
+}
+
+.about-layout {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 70px;
+
+    align-items: flex-start;
+}
+
+.about-content {
+    flex: 2;
+}
+
+.about h2,
+.learning h2,
+.contact h2 {
+    font-size: 28px;
+
+    margin-bottom: 12px;
+}
+/* FLEXBOX FOR IMAGE AND ABOUT TEXT */
+
+.about-profile {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+.profile-image {
+    width: 140px;
+
+    height: 140px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 4px solid #e5f2eb;
+}
+
+.about-content p {
+    color: #667085;
+
+    margin-bottom: 10px;
+}
+
+.goal-card {
+    flex: 1;
+
+    background-color: #f6f7f9;
+
+    padding: 25px;
+
+    border-radius: 6px;
+}
+.card-label {
+    color: #21865f !important;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+.goal-card h3 {
+    margin-bottom: 10px;
+
+    font-size: 17px;
+}
+.goal-card p {
+    color: #667085;
+
+    font-size: 13px;
+}
+
+/* LEARNING SECTION */
+
+.learning {
+    padding: 20px 0 80px;
+}
+
+.section-intro {
+    color: #667085;
+
+    margin-bottom: 25px;
+}
+/* CSS GRID */
+
+.learning-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+}
+.learning-card {
+    border: 1px solid #dfe4e1;
+
+    padding: 25px;
+
+    border-radius: 6px;
+
+    background-color: white;
+
+    transition: 0.3s;
+}
+.learning-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.icon-box {
+    display: inline-block;
+
+    background-color: #eef6f1;
+
+    color: #21865f;
+
+    padding: 7px 10px;
+
+    border-radius: 4px;
+
+    margin-bottom: 15px;
+
+    font-family: monospace;
+
+    font-weight: bold;
+}
+.learning-card h3 {
+    margin-bottom: 8px;
+}
+.learning-card p {
+    color: #667085;
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+}
+.learning-card small {
+    color: #21865f;
+
+    font-weight: bold;
+}
+/* CONTACT SECTION */
+
+.contact {
+    background-color: #eef6f1;
+
+    padding: 55px 0;
+}
+.contact-heading {
+    margin-bottom: 30px;
+}
+
+.contact-heading p {
+    color: #667085;
+}
+
+
+.contact-form {
+    max-width: 800px;
+}
+.form-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #b7c9bf;
+
+    border-radius: 5px;
+
+    font-family: inherit;
+
+    background-color: white;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #258b63;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 22px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+button:hover {
+    background-color: #176c4b;
+}
+
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+
+footer {
+    background-color: white;
+
+    padding: 25px 0;
+
+    color: #667085;
+
+    font-size: 12px;
+}
+
+
+.footer-content {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+/* ------------------------------
+   RESPONSIVE DESIGN
+------------------------------ */
+
+@media (max-width: 768px) {
+
+    .nav-container {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    nav {
+        gap: 15px;
+    }
+
+
+    .hero-container {
+        flex-direction: column;
+    }
+
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+
+    .code-card {
+        width: 100%;
+    }
+
+
+    .about-layout {
+        flex-direction: column;
+    }
+
+
+    .about-profile {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .learning-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .footer-content {
+        flex-direction: column;
+
+        gap: 10px;
+
+        text-align: center;
+    }
+
+}
